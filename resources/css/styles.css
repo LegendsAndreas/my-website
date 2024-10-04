@@ -107,7 +107,7 @@ body {
     content: ''; /* Controls the content that will transition. In our case, the content will just be a block, sincce it is empty. */
     position: absolute; /* Allows the content to only transition inside the button. */
     top: 0;
-    left: -50px; /* Changes the position to start a little to the left. This makes the transition not completely get to the end of the button. */
+    left: -25%; /* Changes the position to start a little to the left. This makes the transition not completely get to the end of the button. */
     width: 0;
     height: 100%; /* Changes how much height will be added. */
     background: #00FF41; /* Controls the color. */

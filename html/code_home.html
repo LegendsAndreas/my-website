@@ -10,29 +10,45 @@
     <a href="https://github.com/LegendsAndreas" class="github_link" target="_blank"><u>https://github.com/LegendsAndreas</u></a>
 </h1>
 
-<!-- Chess -->
 <div class="accordion" id="accordionExample" style="padding-left: 20px; padding-right: 20px;">
+    <!-- Chess -->
     <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collaps bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            <h3 class="matrix code-name">Chess</h3>
-            <h4 class="code-text">A program that allows you to play Chess in the terminal</h4>
+            <h3 class="matrix code-name">chess</h3>
+            <h4 class="code-text">A program written in Go, that allows you to play Chess in the terminal.</h4>
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body code-description">
-            <p>This right here</p>
+            <p>This was my first program of a decent size, and it all started from a meme about a newbie coding chess in Python (see first picture). I was so pissed off by it,
+              because there was clearly a better way of doing it, that i decided to put my money where my mouth was and made a chess game of my own!
+            </p>
+
+            <p>The second image shows what the chessboard looks like in the Windows 11 terminal. I have no clue why the white pawns are purple, it does not show this in my
+              IDE terminal, it might be something with Windows 11. Anyway, you play this in the same way as any chess game, my writing two chessboard squares, the first
+              one having a chess piece. I have also programmed the rules of each chess piece, so that a player cant play it wrong. The hardest piece to program, was actually
+              the pawn piece. The reason being, the way it attacks a chesspiece, is not the same as how it moves. The pawn moves in a straight line, but attacks diagnoally.
+              On top of that, if it is the pawns first move, it can move two chessquares and not just one. This is in contrary to all the other chesspieces, which attacks in
+              the same way that they normally move and is consistent in the way that they move. The horse piece is a little different too, in the sence that it can jump
+              over other chesspieces, however this was a lot easier to program.
+            </p>
+
+            <p>An example of a move, would be the player enters "b2" and "b4", which indicates that the player wants to move a piece on b2, to b4. The game then checks the 
+              type of chesspiece and checks if that move is legal.
+
+            </p>
             <!-- Pictures -->
             <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
                 <div class="col">
                   <div class="card">
-                      <img src="resources\pics\cat1.bmp" alt="cat">
+                      <img src="resources\non-cat-pics\vf3x6x0y3uya1.jpg" alt="meme">
                   </div>
                 </div>
                 <div class="col">
                   <div class="card">
-                      <img src="resources\pics\cat1.bmp" alt="cat">
+                      <img src="resources\non-cat-pics\chess.png" alt="chess">
                   </div>
                 </div>
                 <div class="col">
@@ -44,7 +60,7 @@
             </div>
             <!-- End of pictures -->
             <h1 class="code-button-text">
-              <a href="https://github.com/LegendsAndreas/Independent-works-of-art/tree/main/food_recipes" target="_blank" class="code-button-style"><i>Min Macro Tracker!</i></a>
+              <a href="https://github.com/LegendsAndreas/Independent-works-of-art/tree/main/Chess" target="_blank" class="code-button-style"><i>Chess!</i></a>
             </h1>
           </div>
           <div>
@@ -56,8 +72,8 @@
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collaps bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <h3 class="matrix code-name">Food_recipes</h3>
-            <h4 class="code-text">A program that allows you to play Chess in the terminal</h4>
+            <h3 class="matrix code-name">food_recipes</h3>
+            <h4 class="code-text">A program written in Go, that allows you to play Chess in the terminal.</h4>
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -84,6 +100,9 @@
               </div>
             </div>
             <!-- End of pictures -->
+            <h1 class="code-button-text">
+              <a href="https://github.com/LegendsAndreas/Independent-works-of-art/tree/main/food_recipes" target="_blank" class="code-button-style"><i>Food_recipes!</i></a>
+            </h1>
           </div>
         </div>
       </div>
@@ -93,7 +112,7 @@
         <h2 class="accordion-header">
           <button class="accordion-button collaps bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             <h3 class="matrix code-name">addition_pyramid</h3>
-            <h4 class="code-text">A simple program that allows you to play with an addition pyramid.</h4>
+            <h4 class="code-text">A simple program written in Go, that allows you to fill out an addition pyramid.</h4>
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -120,6 +139,260 @@
               </div>
             </div>
             <!-- End of pictures -->
+            <h1 class="code-button-text">
+              <a href="https://github.com/LegendsAndreas/Independent-works-of-art/tree/main/addition_pyramid" target="_blank" class="code-button-style"><i>addition_pyramid!</i></a>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arduino -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collaps bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <h3 class="matrix code-name">arduino_temperature_sensor</h3>
+            <h4 class="code-text">An Arduino program written in C/C++, that allows you to get the temperature and send it to an MQTT broker.</h4>
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body code-description">
+            <p>This right here</p>
+            <!-- Pictures -->
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of pictures -->
+            <h1 class="code-button-text">
+              <a href="https://github.com/LegendsAndreas/Independent-works-of-art/tree/main/Arduino%20ESP8266%20temperature%20sensor/esp_tempt" target="_blank" class="code-button-style"><i>arduino_temperature_sensor!</i></a>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Go logger -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collaps bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <h3 class="matrix code-name">go_logger</h3>
+            <h4 class="code-text">A program written in Go, that allows me to log an error in a Go program.</h4>
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body code-description">
+            <p>This right here</p>
+            <!-- Pictures -->
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of pictures -->
+            <h1 class="code-button-text">
+              <a href="https://github.com/LegendsAndreas/logger" target="_blank" class="code-button-style"><i>go_logger!</i></a>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- C map -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collaps bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <h3 class="matrix code-name">c_map</h3>
+            <h4 class="code-text">A program written in C, that allows me to make a map in C, with the key type being a string and the value type being an int.</h4>
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body code-description">
+            <p>This right here</p>
+            <!-- Pictures -->
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of pictures -->
+            <h1 class="code-button-text">
+              <a href="https://github.com/LegendsAndreas/c-map" target="_blank" class="code-button-style"><i>c_map!</i></a>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Archive -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collaps bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <h3 class="matrix code-name">archive_system</h3>
+            <h4 class="code-text">A program written in Go, that archives any changes, in a repository.</h4>
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body code-description">
+            <p>This right here</p>
+            <!-- Pictures -->
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of pictures -->
+            <h1 class="code-button-text">
+              <a href="https://github.com/LegendsAndreas/Independent-works-of-art/tree/main/archive_system" target="_blank" class="code-button-style"><i>archive_system!</i></a>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- This site -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collaps bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            <h3 class="matrix code-name">my_home_page</h3>
+            <h4 class="code-text">A website written in HTML, CSS, with Jinja2, Bootstrap and Python and is the site you are on right now!.</h4>
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body code-description">
+            <p>This right here</p>
+            <!-- Pictures -->
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Button -->
+            <h1 class="code-button-text">
+              <a href="https://github.com/LegendsAndreas/my-website" target="_blank" class="code-button-style"><i>my_home_page!</i></a>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temperatures -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collaps bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            <h3 class="matrix code-name">get_temperature</h3>
+            <h4 class="code-text">Two programs that gets the measured temperature from our Arduinos.</h4>
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body code-description">
+            <p>These two programs purpose is the same and nearly functions in the same way. The first one that i created was in Go (go_get_temperature!) and the second one i created, was in Python. The reason
+              there are two of them, is because i made the first program in Go, which is my personal favorite language, and then the school that i go to created a site where we can download the measured temperatures.
+              The site was written with Python as its Backend, which meant that i had to remake the first program, so that it would more easily integrate with the site.
+            </p>
+
+            <p>The programs get the temperatures from an MQTT broker, which functions as a medium between the Arduinos and the actual program. Along with the temperature, they also get the time that that 
+              temperature was recorded. They get this data in the form of a JSON file, where the data is then extracted and put into an Excel file.<br>
+              The difference between the Go and Python version, is that Go creates a new Excel file for every day, while the Python program only creates a new Excel file every month and creates a new Excel sheet,
+              for every day.
+            </p>
+
+            <p>
+
+            </p>
+            <!-- Pictures -->
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                      <img src="resources\pics\cat1.bmp" alt="cat">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Go Button -->
+            <h1 class="code-button-text">
+              <a href="https://github.com/LegendsAndreas/Independent-works-of-art/tree/main/get_data" target="_blank" class="code-button-style"><i>go_get_temperature!</i></a>
+            </h1>
+            <!-- Python Button -->
+            <h1 class="code-button-text">
+              <a href="https://github.com/LegendsAndreas/Independent-works-of-art/tree/main/py_excel_logger" target="_blank" class="code-button-style"><i>py_get_temperature!</i></a>
+            </h1>
           </div>
         </div>
       </div>
