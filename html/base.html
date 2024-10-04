@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename = 'css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/styles.css') }}" rel="stylesheet">
+    
+    <!-- Head Block -->
+    {% block head %}
+    <!-- Everything in here will be replaced, if it is change in a different html file. -->
+    <title>Hjemmeside</title>
+    {% endblock %}
+</head>
+<body>
+    <!-- Navbar which will have 2 fields: Cats and Coding -->
+      <nav class="navbar">
+        <div class="container-fluid justify-content-evenly">
+            <a href="{{ url_for('main.cat') }}" class="nav-text">Cats!</a>
+            <a href="{{ url_for('main.home') }}" class="nav-text">Home!</a>
+            <a href="{{ url_for('main.code') }}" class="nav-text">Code!</a>
+        </div>
+      </nav>
+
+    <!-- The content that will be viewd on all html files. -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Links to the downloaded Bootstrap -->
+    <!-- Since we called it a "static_folder" in our __init__.py, we pass "static" and sice we have defined the resource folder as static, 
+    we dont have to include it in the filename. -->
+    <script src="{{ url_for('static', filename = 'js/bootstrap/bootstrap.bundle.min.js') }}"></script>
+    
+    <!-- Script Block -->
+    {% block scripts %}
+    {% endblock %}
+</body>
+</html>

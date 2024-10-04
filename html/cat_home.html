@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Cats</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-2 justify-content-evenly" style="padding: 10px;">
+        <div class="card" style="width: 18rem;">
+            <a href="{{ url_for('main.merle') }}">
+                <img src="resources/pics/cat10.bmp" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title cat-card-title">~Merle!~</h5>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <a href="{{ url_for('main.fie') }}">
+                <img src="resources/pics/cat10.bmp" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title cat-card-title">Fie...</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container" style="padding: 10px;">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-2 justify-content-evenly" id="cat_card">
+        <div class="col" style="width: 250px; height: 250px;" >
+            <div class="card-body">
+                <a href="#">
+                    <img src="resources/pics/cat1.bmp" alt="cat" style="width: 250px; height: 250px;">
+                </a>
+            </div>
+        </div>
+        <div class="col" style="width: 250px; height: 250px;">
+            <div class="card">
+                <a href="#">
+                    <img src="resources/pics/cat1.bmp" alt="cat" style="width: 250px; height: 250px;">
+                </a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3">
+        <!-- With this simple Jinja2 loop, we go through every passed image in the array "cats".
+            An advantage of this, is that you dont have to be specific about the name of the image. Just through the image in the folder and it sorts it self out!
+            Pretty cheap amount of code too, with only a little of backend code. -->
+        {% for cat_pic in cats %}
+        <div class="col">
+            <div class="card">
+                <img src="{{ url_for('static', filename = 'pics/'+cat_pic) }}" alt="cat">
+            </div>
+        </div>
+        <!-- <br> -->
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

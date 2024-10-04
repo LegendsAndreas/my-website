@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Testy;
+    src: url(/resources/fonts/mobile-font/MobileFont.ttf);
+    /* REMEMBER TO HAVE A FORWARD SLASH AT THE BEGINNING! */
+}
+
+body {
+    background-color: rgb(77, 31, 119);
+}
+
+.nav-text {
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(111, 33, 184);
+    /* Provies a border in solid form.*/
+    border-radius: 10px;
+    border: 2px solid rgb(111, 33, 184);
+    /* Just some extra padding */
+    padding: 10px 20px;
+}
+
+.nav-text:hover, .nav-text:active{
+    background-color: rgb(77, 31, 119);
+    color: orange;
+}
+
+.navbar {
+    background-color: orange;
+}
+
+.cat-card-title {
+    font-size: 35px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+}
+
+.matrix {
+    color: #00FF41;
+    text-shadow: 0 0 3px #00FF41,0 0 5px #00FF41,0 0 5px #00FF41;
+    font-family: Testy;
+    text-align: center;
+}
+
+.github_link {
+   color: #00FF41;
+   text-decoration: none;
+   /* "vw", makes the size of the font adjust to the screen. */
+   font-size: 5vw;
+}
+
+.code-name {
+    background-color: rgb(65, 65, 65);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.code-text {
+    color: white;
+    padding-left: 10px;
+    font-family: cursive;
+}
+
+.code-description {
+    background-color: rgb(65, 65, 65);
+    color: white;
+}
+
+.code-image {
+    width: 250px;
+    height: 250px;
+}
+
+.code-button-style {
+    font-family: Testy;
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    color: #00FF41;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #00FF41;
+    padding: 10px 30px;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 1s, box-shadow 1s;
+}
+
+/* Controls the glow effect of the button, when you hover over it. */
+.code-button-style:hover {
+    transition-delay: 0s, 1s; /* Controls the delay of the glow effect. */
+    color: #fff;
+    box-shadow:
+        0 0 10px #00FF41,
+        0 0 20px #00FF41,
+        0 0 40px #00FF41,
+        0 0 80px #00FF41,
+        0 0 160px #00FF41;
+}
+
+/* Controls the transition of the button. */
+.code-button-style::before {
+    content: ''; /* Controls the content that will transition. In our case, the content will just be a block, sincce it is empty. */
+    position: absolute; /* Allows the content to only transition inside the button. */
+    top: 0;
+    left: -50px; /* Changes the position to start a little to the left. This makes the transition not completely get to the end of the button. */
+    width: 0;
+    height: 100%; /* Changes how much height will be added. */
+    background: #00FF41; /* Controls the color. */
+    transform: skewX(35deg); /* Controls the angel at which it transforms. */
+    z-index: -1; /* Controls what layer the transitioning appears. -1 makes it appear behind the text in our case. */
+    transition: 1s; /* Controls how long it takes for the transitioning to complete. */
+}
+
+/* Controls how much of the content of the transition will appear */
+.code-button-style:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+.code-button-text {
+    text-align: center;
+    padding-top: 30px;
+}
