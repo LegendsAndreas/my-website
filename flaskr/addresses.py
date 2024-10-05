@@ -6,7 +6,7 @@ bp = Blueprint("main", __name__)
 @bp.route("/")
 def home():
     # You can also send variables, that can be used in that html files. You just access them by writing: {{ [VARIABLE_NAME] }}
-    return render_template('home.html', test="Andreas")
+    return render_template('home.html')
 
 @bp.route("/cat-home")
 def cat():

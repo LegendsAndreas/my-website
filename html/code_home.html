@@ -73,12 +73,15 @@
         <h2 class="accordion-header">
           <button class="accordion-button collaps bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             <h3 class="matrix code-name">food_recipes</h3>
-            <h4 class="code-text">A program written in Go, that allows you to play Chess in the terminal.</h4>
+            <h4 class="code-text">A program written in Go, where you can create a list of recipes and track their macros.</h4>
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body code-description">
-            <p>This right here</p>
+            <p>You enter the name of a recipe and insert its ingredients, along with their macros pr. 100g. The recipe is then saved in a .txt file, so that 
+              we dont have to start over again.
+
+            </p>
             <!-- Pictures -->
             <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
@@ -117,7 +120,7 @@
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body code-description">
-            <p>This right here</p>
+            <p>You start off my inserting a top value (the value that will be at the top pyramid),</p>
             <!-- Pictures -->
             <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
@@ -156,7 +159,25 @@
         </h2>
         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body code-description">
-            <p>This right here</p>
+            <p>Oh dear GOD this was such a pain in my ass to get working.</p>
+
+            <p>So, to set the stage: I was at my school and got to work on their Arduinos, they wanted me to make it measure the temperature for each room they had. Now,
+              their Arduinos already DID measure the temperature, however, they did not always work correctly and so they wanted a new more reliable program. Unforturnatly
+              for me, there was NO documentaton of how the Arduinos work. Nothing about how the code works, nothing about the specific Arduino in use, nothing about how to
+              write code to the Arduino, NOTHING!
+            </p>
+
+            <p>Now, if the Arduino board was a more conventional board and more widely used, it would propably not had been that bad of an experience. BUT, the
+              board that I had to configure, was a Clone, which is basically not an officially supported board. Which means, that the process is not always as
+              straight forward to configure it.
+            </p>
+
+            <p>The first step was pretty simple, i just had to install the Arduino IDE, which allows me to create and push the code to the Arduino. But before that, 
+              I have to figure out what type of board that I am working with, before i can send my code to the board. Now here's the fucky part of the board. The board 
+              I had to configure, was technically a combination of TWO Ardunio boards. The first part of the board is made of an Arduino Uno board and the second part 
+              is made up of a Board with an ESP8266 chip, which meant that I had to use two different configuration, for each board part. <br>
+              The first part of the board, is made of an Arduino Uno board.
+            </p>
             <!-- Pictures -->
             <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
@@ -195,18 +216,30 @@
         </h2>
         <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body code-description">
-            <p>This right here</p>
+            <p>I often get into situations where i want to log an error, so that i can see what exactly went wrong, along with a list of errors. So, instead of re-writing 
+              a code that does that for every new program that i make, i decided to create a GitHub library, that i, along with anyone else, can get every time i need it! In Go, it's also 
+              VERY easy to clone a GitHub repository to a Go program, with the "go get" function.
+            </p>
+
+            <p>With the program, you can log with 3 options: Info, Warning and Error, depending on the type of error. The program will automatically create a .txt file, that 
+              by default is named "logName" and creates it with the user defined path. The program also comes with the function "GetPath", which gets the program execution path, 
+              in case you just want it to be saved in the execution directory.
+            </p>
+
+            <p>
+
+            </p>
             <!-- Pictures -->
             <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
                 <div class="col">
                   <div class="card">
-                      <img src="resources\pics\cat1.bmp" alt="cat">
+                      <img src="resources\non-cat-pics\getPathFuncs.png" alt="cat">
                   </div>
                 </div>
                 <div class="col">
                   <div class="card">
-                      <img src="resources\pics\cat1.bmp" alt="cat">
+                      <img src="resources\non-cat-pics\getPath.png" alt="cat">
                   </div>
                 </div>
                 <div class="col">
@@ -234,7 +267,10 @@
         </h2>
         <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body code-description">
-            <p>This right here</p>
+            <p>This program allows you to create a type that essentially works like any other Hashtable implementation in any other language. That being said, it is limited 
+              to only have the key type be a string and the value type be an integer.
+
+            </p>
             <!-- Pictures -->
             <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
@@ -268,12 +304,18 @@
         <h2 class="accordion-header">
           <button class="accordion-button collaps bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
             <h3 class="matrix code-name">archive_system</h3>
-            <h4 class="code-text">A program written in Go, that archives any changes, in a repository.</h4>
+            <h4 class="code-text">A program written in Go, that archives the content of a repository.</h4>
           </button>
         </h2>
         <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body code-description">
-            <p>This right here</p>
+            <p>This program is a from a code-along type video, which can be seen here: <a href="https://www.youtube.com/watch?v=xbI2ELnVGAo">https://www.youtube.com/watch?v=xbI2ELnVGAo</a>.
+              Please check him out.
+            </p>
+
+            <p>The program scans a directory, that the actual program resides in, and every time it detects a change, it archives a copy of the current content.
+
+            </p>
             <!-- Pictures -->
             <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-evenly">
