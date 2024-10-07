@@ -5,9 +5,57 @@
 {% endblock %}
 
 {% block content %}
-    <div>Thanks to <a href="https://ankeart.gumroad.com/">www.anke-art.de</a>, for letting me use his font ^^.</div>
-    <img src="resources\non-cat-pics\20240517_174008.jpg" alt="i" style="border-radius: 50%; width: 300px; display: block; margin-left: auto; margin-right: auto;">
-    <h2 style="color: white; padding: 25px;">Hello good sir (or ma'am), welcome to my very own website! I study at Mercantec Viborg, as a Computer Scientist (Datamatiker med speciale i programmering).</h2>
-    <h4 style="color: white; padding: 25px;">This sites purpose is to showcase me, both as a person and my ability as a programmer, and as a way to exercise my webprogramming skills. You may also see my cats instead!</h4>
-    <iframe src="resources\other\CV, Andreas Østergård Christoffersen, English.pdf" class="pdf" style="display: block; margin-left: auto; padding: 25px;" width="500px" height="750px"></iframe>
+
+<!-- Profile pics -->
+<div class="d-flex justify-content-evenly">
+    <img src="resources\non-cat-pics\20241001_102310.jpg" alt="i" style="border-radius: 50%; height: 500px; display: block; margin-left: auto; margin-right: auto;">
+    <img src="resources\non-cat-pics\20240517_174008.jpg" alt="i" style="border-radius: 50%; height: 500px; display: block; margin-left: auto; margin-right: auto;">
+    <img src="resources\non-cat-pics\20240905_083344.jpg" alt="i" style="border-radius: 50%; height: 500px; display: block; margin-left: auto; margin-right: auto;">
+</div>
+
+<!-- Me section -->
+<div class="home-background">
+    <h2 class="home-text">Hello good sir (or ma'am), welcome to my very own website! I am Andreas Østergård Christoffersen and i study at Mercantec Viborg, as a Computer Scientist (Datamatiker med speciale i programmering).</h2>
+    <h4 class="home-text">This sites purpose is to showcase me, both as a person and my ability as a programmer. You may also see my cats instead! (Also, thanks to 
+        <a href="https://ankeart.gumroad.com/">www.anke-art.de</a> for allowing me to use his font ^^).</h4>
+    <iframe src="resources\other\CV, Andreas Østergård Christoffersen, English.pdf" class="pdf resume" width="500px" height="750px"></iframe>
+    <p class="home-text">
+        <i><u><strong>A quick tour</strong></u></i> <br> 
+        In the above navbar, the button "Cats!", takes you to a page where you can view my two cats, Merle and Fie. They are two 
+        LOVELY cats, although i do have a favorite, as you can probably tell from the amount of pictures of one certain cat. <br>
+        The "Home!" button just returns you to this page, the third button "Code!", is probably more what you are looking for though, as it is where i showcase
+        some of my favorite programs that i have made. <br>
+        Sometimes it's a fun little game i have made, something that challenges me as a programmer, or it's a program that allows me to increase my productivity 
+        in my daily life. Also, if you see a picture of a cat on the coding page, that is supposed to be a placeholder image.
+    </p>
+
+    <p class="home-text">
+        <i><u><strong>Andreas the man</strong></u></i> <br>
+        But who IS this Andreas guy? Well, the first things that comes to mind, is that I am a very reliable guy, in the sense that I am always up to help, even if 
+        I have a limited amount of knowledge about a subject. Even if i dont know alot about a subject, I am always up for learning and be useful to others! <br>
+        The best case for this, would be when i helped Mercantec with their Arduinos. I knew absolutly nothing about Arduinos at the start, but that didn't stop me
+        from trying, and succeeding, to get our Arduinos working! You can also find that project and learn more about my experience on the coding page. <br>
+        Besides our Arduinos, I also am the one that sat up our 3D printer, so that we can access it and control it remotely, with OctoPrint. <br>
+        I also set up our own Test Bench, which people also can access remotely and use for heavy workload. <br>
+        My expertice also shows during my time off work. I like to know exactly what i eat, as to not get fat and unhealthy, so i created my own Macro Tracker, which
+        I also showcase in my coding tab. <br>
+        And finally sometimes, i just like to code stuff that i think would be fun. Like my addition pyramid game!
+        <br> <br>
+        Something else about me, is that I have Autism, which I think only benefits me. Something about alot of Autistict people, is that they have a speciale interest, 
+        which they find incredibly interesting and only want to know more and more about. In my case, that would be programming. I think programming is such an incredible
+        subject. The idea that I have the ability to automate or create special programs that help me in regular days, greatly intrigues me.
+    </p>
+
+    <p class="home-text">
+        <i><u><strong>Golang</strong></u></i> <br>
+        Or just Go, has become my favorite language
+    </p>
+
+    <p class="home-text">
+        If you thing that I would be perfect for an apprenticeship, or even an internship, you can contact me via. phone and email: <br>
+        <u>Phone: 29 86 55 71</u><br>
+        <u>Mail: andreasbxb@pm.me</u> <br>
+    </p>
+</div>
+
 {% endblock %}

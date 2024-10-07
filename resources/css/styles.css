@@ -126,3 +126,28 @@ body {
     text-align: center;
     padding-top: 30px;
 }
+
+.home-background {
+    background-color: #212529;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.resume {
+    display: block; 
+    float: right;
+    padding: 25px;
+}
+
+.home-text {
+    color: white;
+    padding: 10px;
+    font-family: cursive;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+}
+
+.card-header {
+    background-color: #212529;
+    color: white;
+}
